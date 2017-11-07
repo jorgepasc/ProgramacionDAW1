@@ -1,0 +1,32 @@
+import java.util.*;
+public class T4Hoja2Ej2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner (System.in);
+		char letra;
+		System.out.println("Frase?");
+		String fraseInicial, fraseCambiada = "";
+		String unaLetra = "", letraVacia = "", espacio = "";
+		int contador;
+		fraseInicial = teclado.nextLine();
+		System.out.println("Letra?");
+		letra = teclado.nextLine().charAt(0);
+		//..=next guarda hasta que le des un espacio
+		//..=next.Line guarda hasta que le des al intro
+		unaLetra = unaLetra + letra;
+		fraseCambiada = new String(fraseInicial);
+		for (contador = 1; contador <= 3; contador++){
+			if (contador == 1){
+				fraseCambiada =fraseInicial.replaceFirst(unaLetra, letraVacia);
+			}else if (contador == 2){
+				fraseCambiada =fraseInicial.replaceFirst(unaLetra, letraVacia);
+			}else{
+				fraseCambiada =fraseInicial.replaceFirst(unaLetra, letraVacia);
+			}
+			
+				
+		}//for
+		System.out.println(fraseCambiada);
+	}//main
+}//class

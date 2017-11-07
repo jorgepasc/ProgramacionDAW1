@@ -1,0 +1,11 @@
+INDEX VERSION 1.130+C:\Programación\Tema_04_String\WKS_04\.metadata\.plugins\org.eclipse.jdt.core
+4016527066.index
+1264792160.index
+4196569103.index
+2775405388.index
+4269523339.index
+2717947733.index
+722236378.index
+3530187738.index
+2457866347.index
+990496495.index

@@ -1,0 +1,31 @@
+/*10. Escribir un programa que lea una frase (máximo 60 caracteres) y diga cuántas letras
+distintas tiene y la frecuencia de las mismas, para homogeneizar el conjunto de letras
+debemos trabajar solo con mayúsculas.*/
+import java.util.*;
+public class T4Hoja1Ej10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		String frase;
+		int vecLetras[] = new int [26], k, indice, indiceConta;
+		final int MAX = 60;
+		do {
+			System.out.println("Frase? (maximo 60 caracteres)");
+			frase = teclado.nextLine();
+		}while(frase.length() > MAX);
+		frase = frase.toUpperCase();
+		for (k = 0; k < 26; k++){
+			vecLetras [k] = 0;//para poner a cero los elementos de un vector tambien hay que usar un for 
+		}//for
+		for (indice = 0; indice < frase.length(); indice++){
+			 indiceConta = frase.charAt(indice) - 65;
+			 vecLetras[indiceConta]++; 
+		}//for
+		for (k = 0; k < 26; k++){
+			System.out.println("La letra " + (char)(k + 65) + " aparece " + vecLetras[k]);	
+		}
+		
+	}//main
+
+}//class
